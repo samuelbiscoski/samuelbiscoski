@@ -3,40 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-   <title>As aventura em Moskau"</title>
+    <link rel="stylesheet" href="style.css"
+    <title>aventuras de Lari</title>
 </head>
 <body>
-<main>
-    <div>
-        <p>Um dia desse, dentro de um livro 
-            da biblioteca da cidade,eu descobri 
-            uma carta antiga sobre uma cidade perdida
-            escondida por riqueas e beleas naturais 
-            nessa carta a algumas pistas para 
-            encontrar essa cidade e eu decidi segui-las
+   <main>
+     <div class="passo ativo" id="passo-0">
+        <p>um dia desses, dentro de um livro 
+            da biblioteca da cidade, eu descobri
+            uma carta antiga sobre uma cidade perdida,
+            escondida por riquezas e belezas naturais.
+            Nessa carta, há algumas pistas para 
+            encontrar essa cidade e eu decidi seguí-las!
         </p>
-        <button>Moskau</button>
-        <button>stalingrado</button>
+        <button class="btn-proximo" data-proximo="1">Moskau</button>
+        <button class="btn-proximo" data-proximo="2">lenindrago</button>
     </div>
-    <div>
-    <p>você comeca ua jornada em Moskau,na 
-        praca vermelha, onde voce 
-        encontra a primeira pista.</p>
-               <button>procurar a pista no banco vermelho </button>
-               <button>desitir e voltar pra casa</button>
+    <div class="passo" id="passo-1">
+        <p>vocẽ começa sua jornada em Moskau
+             na praça vemelha, em uma carro Lada velho abandonado 
+             .</p>
+             <button class="btn-proximo" data-proximo="3">procurar pista dentro do Lada velho</button>
+             <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
     </div>
-</main>
-<script src="script.js"></script>
-</body>
-<div class="passo" id="passo-2">
-            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
+    <div class="passo" id="passo-2">
+            <p>voce começa em lenindrago uma cidade que ja passou po poucas e boas</p>
             <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
-            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
-        </div>
-        <div class="passo" id="passo-3">
-            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
-                localizada no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="6">Explorar os cemiterios de tanques velho</button>
+     </div>
+     <div class="passo" id="passo-3">
+            <p>No topo da torre de uma velha igreja você encontra uma antiga inscrição apontando que a próxima pista está
+                localizada em são petersburgo.</p>
             <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
         </div>
 
@@ -47,8 +44,8 @@
         </div>
 
         <div class="passo" id="passo-5">
-            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
-                pista está no Amazonas.</p>
+            <p>Nas igrejas de lenindrago você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
+                pista está no sao petersburgo.</p>
             <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
         </div>
 
@@ -90,3 +87,7 @@
                 que levam à cidade perdida.</p>
             <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
         </div>
+</main> 
+  <script src="script.js"></script>
+</body>
+</html>
